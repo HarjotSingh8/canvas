@@ -186,7 +186,7 @@ function setup() {
   // put setup code here
   canvas_width = windowWidth;
   canvas_height = windowHeight;
-  createCanvas(1280, 720);
+  createCanvas(canvas_width, windowHeight);
   background(100);
   fill(255, 255, 255);
   var box = new BoundingBoxes();
@@ -234,6 +234,7 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   canvas_width = windowWidth;
   canvas_height = windowHeight;
+  background(100);
 }
 // function mouseClicked(event) {
 // console.log("mouseclicked");
