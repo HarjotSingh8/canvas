@@ -1,5 +1,5 @@
-var canvas_width = windowWidth;
-var canvas_height = windowHeight;
+var canvas_width = 1280;
+var canvas_height = 720;
 var box_num = 0;
 class BoundingBoxes {
   constructor() {
@@ -184,6 +184,8 @@ var last_touch_time = new Date().getTime();
 
 function setup() {
   // put setup code here
+  canvas_width = windowWidth;
+  canvas_height = windowHeight;
   createCanvas(1280, 720);
   background(100);
   fill(255, 255, 255);
