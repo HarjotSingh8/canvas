@@ -1,5 +1,5 @@
-var canvas_width = 1280;
-var canvas_height = 720;
+var canvas_width = windowWidth;
+var canvas_height = windowHeight;
 var box_num = 0;
 class BoundingBoxes {
   constructor() {
@@ -227,6 +227,11 @@ function touchEnded(event) {
   fill(255);
   circle(event.pageX, event.pageY, 2);
   custom_touch_controller.end_touch();
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  canvas_width = windowWidth;
+  canvas_height = windowHeight;
 }
 // function mouseClicked(event) {
 // console.log("mouseclicked");
