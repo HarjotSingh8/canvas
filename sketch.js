@@ -234,7 +234,6 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   canvas_width = windowWidth;
   canvas_height = windowHeight;
-  background(100);
 }
 // function mouseClicked(event) {
 // console.log("mouseclicked");
